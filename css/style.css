@@ -1,0 +1,194 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 48px;
+  background-color: #000000;
+  padding-top: none;
+  position: fixed;
+}
+
+nav a {
+  display: block;
+  float: left;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: white;
+  height:48px;
+  
+  
+
+}
+
+
+
+#nav-logo{
+  /* font */
+  
+  font-family: 'Hind', sans-serif;
+  font-size: 30px;
+  letter-spacing: -2px;
+  text-shadow: 1px 1px 2px #c4c4c4;
+  text-decoration: none;
+
+  /* box */
+  height: 48px;
+  width: 200px;
+  padding-top:20px;
+  padding-left: 30px;
+  padding-right:40px;
+  margin-right: 10px;
+  margin-top: -15px;
+}
+
+.nav-ele-2{
+  margin-left: 57%;
+}
+
+.links {
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-decoration: none; 
+  width: 100px;
+  text-align: center;
+
+  transition: all .4s ease-in-out;
+}
+
+.links:hover{
+  background-color: #444444;
+  height: 48px;
+  border-bottom: 5px solid white;
+}
+
+.homepage-project-header{
+font-family: Tahoma;  
+font-size:29px;  
+text-align: center;
+padding-top: 45px;
+font-weight:bold;
+}
+
+.homepage-goals-header{
+  font-family: Tahoma;
+  font-size:21px;
+  padding-bottom:15px;
+  text-decoration: underline;
+}
+
+.homepage-goals-section{
+  margin-left:10px;
+  margin-top:40px;
+}
+
+.homepage-goals-list{
+  list-style-type: circle;
+}
+
+.btn-goals{
+  margin-bottom:15px;
+  padding:7px;
+  border-radius:3px;
+  border: 1px solid black;
+  background-color: rgb(196, 77, 77);
+  color:white;
+  transition: all .4s ease-in-out;
+}
+
+.btn-goals:hover{
+  background-color: rgb(17, 6, 6);
+  color:white;
+}
+
+.the-trial-header{
+  margin-top:60px;
+  font-family: Tahoma;  
+  font-size:26px;  
+  text-align: center;
+  font-weight:bold;
+}
+
+.homepage-goals-list{
+  list-style-type: circle;
+  font-family: Tahoma;
+  list-style-position: inside;
+  margin-left:25px;
+  font-size:18px;
+}
+
+.ajax-btn{
+
+  
+  margin-bottom:15px;
+  padding:7px;
+  border-radius:3px;
+  border: 1px solid black;
+  background-color: rgb(196, 77, 77);
+  color:white;
+  transition: all .4s ease-in-out;
+  width: 10%;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+.ajax-btn:hover{
+  background-color: rgb(48, 8, 141);
+  color:white;
+}
+
+.ajax-page-button-header{
+  text-align:center;
+  margin-bottom: 20px;
+  font-family:Tahoma;
+}
+
+.ajax-loading-text{
+  text-align: center;
+  font-family: Tahoma;
+  margin-top:10px;
+}
+
+table {
+  margin-top:25px;
+  table-layout: fixed;
+  width:90%;
+
+}
+
+.JSON-table th{
+  font-size: 20px;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+.JSON-table tr{
+  width:90%;
+  text-align:center;
+  line-height:25px;
+  font-family: Tahoma;
+}
