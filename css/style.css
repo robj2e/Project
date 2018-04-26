@@ -241,3 +241,25 @@ table {
   padding-right: 140px;
 }
 
+.Weather-table th{
+  font-size: 15px;
+  font-family: Tahoma;
+  font-weight:bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #111111;
+  line-height: 30px;
+  
+}
+
+.Weather-table tr{
+  width:90%;
+  text-align:center;
+  line-height:25px;
+  font-family: Tahoma;
+}
+
+.Weather-table tr:nth-of-type(even) {
+  background-color:rgb(190, 190, 190);
+}
