@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 2e - Weather API</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a id="nav-logo" class="nav-ele-1" href="index.html">Project 2e</a>
+        <a class="nav-ele-2 links" href="index.html">Home</a>
+        <a class="nav-ele-3 links" href="ajax.html">AJAX</a>
+        <a class="nav-ele-4 links" href="#">Weather API</a>
+        <a class="nav-ele-5 links" href="#">Contact</a>
+       </nav>
+    
+  <h2 class="weather-api-button-header">This button below will display the Weather in a UK City of your choice by pulling the JSON data from the Yahoo Weather API.</h2>
+  <br>
+  <br>
+  <h3 class="enter-city-field">Please enter your city (UK)</h3>
+  <input type="text" class="city-name" placeholder="City..."/>     
+  <button class="weather-btn">Go</button>
+  <br>
+  <br>
+  <br>
+  <div class="Weather-table">
+    <h2 class="location-header"></h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Date</th>
+            <th>Temperature F (High)</th>
+            <th>Temperature F (Low)</th>
+            <th>Temperature C (High)</th>
+            <th>Temperature C (Low)</th>
+            <th>General Outlook</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>      
+    </div>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="./js/project.js"></script>
+</body>
+</html>

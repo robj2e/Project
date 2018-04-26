@@ -31,3 +31,33 @@ $('.ajax-btn').click(function () {
     }
   })
 })
+
+// WEATHER API
+
+let cityName = ''
+
+$('.weather-btn').click(function () {
+  if ($('.city-name').val() == '') {
+    alert('Please enter in your city, field is blank')
+  } else {
+    let cityName = $('.city-name').val()
+
+    $.ajax({
+      type: 'GET',
+      url: 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22' + cityName + '%2C%20uk%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys',
+      success: function (response) {
+        console.log(response)
+        let trWeatherHTML = ''
+
+        $.each(response.query.results.channel.item.forecast, function (i, forecast) {
+          trWeatherHTML += '<tr><td>' + forecast.day + '</td><td>' + forecast.date + '</td><td>' + forecast.high + '</td><td>' + forecast.low + '</td><td>' + Math.round((Number(forecast.high) - 32) * 0.5555) + '</td><td>' + Math.round((Number(forecast.low) - 32) * 0.5555) + '</td><td>' + forecast.text + '</td></tr>'
+        })
+        $('.Weather-table > table tbody').append(trWeatherHTML)
+        $('.location-header').append(cityName + ', UK')
+      },
+      error: function (reponse) {
+        alert("This request failed, please try again. Make sure it's a valid UK City name")
+      }
+    })
+  };
+})

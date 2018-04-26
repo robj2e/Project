@@ -192,3 +192,52 @@ table {
   line-height:25px;
   font-family: Tahoma;
 }
+
+.weather-api-button-header{
+  padding-top:80px;
+  width: 100%;
+  text-align:center;
+  font-family: Tahoma;
+  font-size:17px;
+}
+
+.enter-city-field{
+  width: 100%;
+  text-align:center;
+  font-family: Tahoma;
+  font-size:14px;
+}
+
+.city-name{
+  text-align:center;
+  margin-top: 18px;
+  padding-left: 15px;
+  padding-right:23px;
+  height:30px;
+  border-radius:5px;
+  margin-left: 44%;
+}
+
+.weather-btn{
+  
+  text-align:center;
+  margin-top: 14px;
+  padding-left: 15px;
+  padding-right:15px;
+  border-radius:5px;
+  height: 30px;
+  display: inline-block;
+  background-color: rgb(19, 173, 52);
+  color: white;
+}
+
+.weather-btn:hover{
+  background-color: rgb(26, 109, 26);
+}
+
+.location-header{
+  text-align: center;
+  font-family: Tahoma;
+  padding-right: 140px;
+}
+
