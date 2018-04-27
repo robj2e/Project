@@ -49,7 +49,7 @@ function getWeather () {
 
         let trWeatherHTML = ''
 
-        $.each(response.query.results.channel.item.forecast, function (i, forecast) {
+        $.each(response.query.results.channel.item.forecast, function (index, forecast) {
           trWeatherHTML += '<tr><td>' + forecast.day + '</td><td>' + forecast.date + '</td><td>' + forecast.high + '</td><td>' + forecast.low + '</td><td>' + Math.round((Number(forecast.high) - 32) * 0.5555) + '</td><td>' + Math.round((Number(forecast.low) - 32) * 0.5555) + '</td><td>' + forecast.text + '</td></tr>'
         })
         $('.Weather-table > table tbody').html(trWeatherHTML)

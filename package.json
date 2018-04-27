@@ -110,5 +110,7 @@
   "email": "virginia@hewitt.ly",
   "bool": true
   }
-  ]
+  ],
+  "foo": 25,
+  "timestamp": ""
   }
